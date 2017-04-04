@@ -41,7 +41,7 @@ clusterdock_run() {
   #                               make available to users
 
   if [ -z "${CLUSTERDOCK_IMAGE}" ]; then
-    local CONSTANTS_CONFIG_URL='https://raw.githubusercontent.com/cloudera/clusterdock/master/clusterdock/constants.cfg'
+    local CONSTANTS_CONFIG_URL='https://raw.githubusercontent.com/qudaniel/clusterdock/master/clusterdock/constants.cfg'
 
     # awk -F argument allows for any number of spaces around equal sign.
     local DOCKER_REGISTRY_URL=$(curl -s "${CONSTANTS_CONFIG_URL}" \
